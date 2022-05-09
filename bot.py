@@ -9,10 +9,12 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
-    print(F'{member} join!')
+    channel = bot.get_channel(973131573820018698)
+    await channel.send(F'{member} join! ')
 
 @bot.event
 async def on_member_remove(member):
-    print(F'{member} leave!')
+    channel = bot.get_channel(9973131716766097429)
+    await channel.send(F'{member} leave! ')
 
 bot.run('OTczMTIxODEzMTUwMzAyMjM4.GWMg48.AQDYsNECs9bGjoxn0P-6JapQHSKfBt-9Odn1Og')
